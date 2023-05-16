@@ -1,6 +1,3 @@
-from django.http import HttpResponse
-
-
 # o trabalho de "render" e ler um arquivo e renderizar esse arquivo.
 from django.shortcuts import render
 
@@ -133,11 +130,3 @@ e é basicamente isso, e isso se chama de "namespace" que a gente está fazendo.
 
 def home(request):
     return render(request, 'recipes/home.html')
-
-
-def sobre(request):
-    return HttpResponse('sobre 1')
-
-
-def contato(request):
-    return HttpResponse('contato 1')
