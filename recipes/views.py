@@ -130,3 +130,9 @@ e é basicamente isso, e isso se chama de "namespace" que a gente está fazendo.
 
 def home(request):
     return render(request, 'recipes/pages/home.html')
+
+
+def recipe(request, id):
+    return render(request, 'recipes/pages/home.html', context={
+        'name': 'Luiz Otávio',
+    })
